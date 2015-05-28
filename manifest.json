@@ -1,0 +1,23 @@
+{
+  "name": "image-modifier",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "change image to whatever you want",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "content-script.js"
+    ]
+  }],
+  "web_accessible_resources": [
+    "embedded-script.js",
+    "boon.jpg"
+  ]
+}
